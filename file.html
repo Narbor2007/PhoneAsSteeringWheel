@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accelerometer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="mainWrapper">
+    <div class="slidersWrapper">
+
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="slider1">
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="slider2">
+        </div>
+        <button id="accelPermsButton" onclick="getAccel()" style="scale: 20px;">Get Accelerometer Permissions</button>
+    </div>
+    <div class="buttons">
+        <button id="lookLeft" onclick="lookLeft()"></button>
+        <button id="F1" onclick="F1()">F1</button>
+            <div class="slidecontainerf">
+                <input type="range" min="1" max="100" value="50" class="sliderf" id="sliderFOV">
+            </div>
+        <button id="T" onclick="T()">T</button>
+        <button id="lookRight" onclick="lookRight()"></button>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
